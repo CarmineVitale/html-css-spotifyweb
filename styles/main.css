@@ -1,0 +1,156 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* LAYOUT */
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/* Utilities */
+.vertical {
+  vertical-align: middle;
+}
+
+
+/* MAIN WINDOW */
+#main-window {
+    flex-grow: 1;
+    display: flex;
+}
+
+
+/* SIDEBAR */
+#sidebar {
+    flex-basis: 230px; /* larghezza sidebar */
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-top {
+    flex-grow: 1;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+}
+#sidebar .sidebar-top .logo {
+  padding: 13px;
+}
+#sidebar .sidebar-top .logo img {
+  width: 150px;
+}
+#sidebar .sidebar-top img {
+  width: 25px;
+}
+#sidebar .sidebar-top a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  padding: 10px 20px;
+}
+#sidebar .sidebar-top h4 {
+  padding: 30px 20px 10px;
+}
+
+#sidebar .sidebar-top .home,
+#sidebar .sidebar-top .search,
+#sidebar .sidebar-top .library {
+  padding-bottom: 10px;
+  padding-left: 5px;
+  border-left: 3px solid transparent;
+}
+
+#sidebar .sidebar-top .home:hover,
+#sidebar .sidebar-top .search:hover,
+#sidebar .sidebar-top .library:hover {
+  border-color: yellow;
+}
+#sidebar .sidebar-top i {
+  display: inline-block;
+  margin-right: 3px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+.sidebar-bottom {
+  padding: 30px 0;
+    background: black;
+    border-top: 2px solid white;
+}
+#sidebar .sidebar-bottom a {
+  padding-left: 10px;
+
+  text-decoration: none;
+  color: white;
+}
+#sidebar .sidebar-bottom i {
+  display: inline-block;
+  background-color: grey;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 20px;
+}
+
+
+
+
+
+/* CONTENT */
+#content {
+    position: relative;
+    flex-grow: 1;
+    background: #000;
+}
+
+.content-top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: rgba(100, 50,0, .5);
+    z-index: 1;
+}
+
+#content .scrollable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    /* 90px = height di content-top-bar */
+    padding: 90px 15px 30px;
+}
+
+.content-menu {
+    height: 80px; /*debug*/
+    background: #222;
+}
+
+.content-category {
+    height: 200px; /* Debug */
+}
+
+
+/* BOTTOM PLAYER */
+#player {
+    height: 80px; /*debug*/
+    background: #333;
+}
