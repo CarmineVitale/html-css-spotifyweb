@@ -87,8 +87,8 @@ body {
 }
 .sidebar-bottom {
   padding: 30px 0;
-    background: black;
-    border-top: 2px solid white;
+  background: black;
+  border-top: 2px solid white;
 }
 #sidebar .sidebar-bottom a {
   padding-left: 10px;
@@ -105,6 +105,9 @@ body {
   text-align: center;
   line-height: 30px;
   border-radius: 20px;
+}
+.logo .small {
+  display: none;
 }
 
 
@@ -356,4 +359,40 @@ body {
 }
 .volume:hover::after {
   background: red;
+}
+
+/* Responsive Part */
+@media all and (max-width:600px) {
+  .playlist {
+    display: none;
+  }
+  .logo .large {
+    display: none;
+  }
+  .logo .small {
+    display: inline-block;
+  }
+  #sidebar {
+    flex-basis: 73px;
+  }
+  #sidebar .sidebar-top .logo .small {
+    margin-left: 14px;
+    width: 27px;
+  }
+  #sidebar .sidebar-bottom {
+    border-top: 0px;
+  }
+  #sidebar .sidebar-top span,
+  #sidebar .sidebar-bottom span {
+    display: none;
+  }
+  #sidebar {
+    align-items: center;
+  }
+  /* #content {
+    flex-grow: 0;
+    flex-basis: 400px;
+    flex-wrap: wrap;
+  } */
+
 }
