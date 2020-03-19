@@ -196,6 +196,7 @@ body {
 
 .copertina {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .content-category a {
