@@ -261,6 +261,8 @@ body {
 
 
 /* BOTTOM PLAYER */
+
+/* PArte sinista footer con copertina e nome brano */
 #player {
     background: #333;
     display: flex;
@@ -278,11 +280,13 @@ body {
 #player .song p {
   font-size: 10px;
 }
+/* parte centrale del fotter con comandi per brani e avanzamento brano */
 #player ul {
   list-style: none;
   display: flex;
   justify-content: center;
 }
+
 #player .col-center li {
   font-size: 14px;
 }
@@ -290,17 +294,12 @@ body {
   padding: 0 20px;
 }
 .col-center {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   flex-basis: 500px;
 }
 
 .stato {
   position: relative;
   content: '';
-  /* width: 300px; */
   flex-grow: 1;
   height: 4px;
   background: #EEE;
@@ -337,11 +336,11 @@ body {
   display: flex;
   align-items: center;
   margin-top: 10px;
-  /* flex-grow: 1; */
 }
 .col-center span {
   font-size: 10px;
 }
+/* Parte destra footer con regolazione volume */
 #player .col-dx li {
   margin-right: 10px;
 }
@@ -420,11 +419,8 @@ body {
     flex-basis: calc(100%/2 -10px);
   }
   #content .content-menu .listainline li {
-    /* padding: 5px 20px; */
     margin: 0 3px 15px;
   }
-  /* #content .content-menu .listainline {
-    flex-basis: calc(100% / 4);
-  } */
+
 
 }
