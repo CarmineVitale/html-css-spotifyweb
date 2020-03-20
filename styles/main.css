@@ -292,6 +292,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .stato {
   position: relative;
   content: '';
@@ -331,6 +332,7 @@ body {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  /* flex-grow: 1; */
 }
 .col-center span {
   font-size: 10px;
@@ -398,5 +400,11 @@ body {
   .volume {
     width: 40px;
   } */
+  #player .icon-list-song {
+    list-style: none;
+    /* display: block; */
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 }
