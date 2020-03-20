@@ -279,6 +279,7 @@ body {
 #player ul {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 #player .col-center li {
   font-size: 14px;
@@ -287,16 +288,18 @@ body {
   padding: 0 20px;
 }
 .col-center {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  flex-basis: 600px;
 }
 
 .stato {
   position: relative;
   content: '';
-  width: 300px;
+  /* width: 300px; */
+  flex-grow: 1;
   height: 4px;
   background: #EEE;
   margin-left: 10px;
